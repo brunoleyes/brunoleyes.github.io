@@ -1,0 +1,201 @@
+@font-face{
+    font-family: 'Lato';
+    src: url("../fonts/MochiyPopOne-Regular.ttf");
+}
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*GENERALES*/
+
+body{
+    font-family: 'Baloo 2', cursive;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+header{
+    height: 60px;
+    background-color: red;
+    
+    
+    
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.logo img{
+    width: 50px;
+}
+
+nav{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+} 
+
+.menu ul li a{
+    text-decoration: none;
+    padding: 0 5px;
+    color: #fff;
+}
+
+.contactoWhatsapp img{
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+}
+
+/*INDEX*/
+
+#presentacion .banner{
+    width: 100%;
+    height: 100vh;
+    border: 4px solid orange;
+    border-radius: 4px;
+    padding-left: 40px;
+}
+
+#presentacion .banner h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+#presentacion .banner .frontEnd{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#presentacion .banner .developer{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#presentacion .banner img{
+    width: 400px;
+}
+
+
+.tituloServicios{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#servicios{
+    margin-top: 40px;
+}
+
+#servicios div .tituloServicioItem{
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#servicios div .parrafoServicioItem{
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#servicios .serviciosItemsContainer div{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: 4px solid red;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#servicios .serviciosItemsContainer div .imagenServicioItem{
+    width: 80px;
+    text-align: center;
+}
+
+/*------*/
+/* Contacto */
+#contacto{
+    padding: 0 20px;
+}
+.formulario{
+    width: 100%;
+    height: 100%;
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#contacto h2{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+
+}
+
+.formulario h3{
+    font-size: 2rem;
+}
+
+.formulario label{
+    display: block;
+}
+
+.formulario .datosPersonalesForm input{
+    padding: 5px 10px;
+    margin-top: 20px;
+    background: rgb(72, 72, 205);
+}
+
+.formulario .datosDePaginaForm textarea{
+    background: rgb(54, 54, 186);
+    width: 100%;
+    border: 2px solid black;
+}
+
+.botonesForm input{
+    padding: 5px 10px;
+    background: yellow;
+    color: red;
+    font-weight: bold;
+    border-radius: 4px;
+
+}
+
+
+
+/*-----------*/
+
+footer{
+    text-align: center;
+}
+
+footer .tituloFooter{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+}
+
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+footer ul li a img{
+    padding: 0 15px;
+}

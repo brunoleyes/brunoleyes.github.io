@@ -1,0 +1,531 @@
+@font-face{
+    font-family: 'Lato';
+    src: url("../fonts/MochiyPopOne-Regular.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background: #0a192f;
+    /*  
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    */
+    color: #fff;
+}
+
+.wraper{
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem 2rem 2rem;
+    backgcround-color: red;
+}
+
+header .logo img{
+    width: 50px ;
+    height: 50px;
+}
+
+
+header .navBar__ul{
+    margin-bottom: 0;
+}
+header .navBar__ul-li{
+    display: inline-block;
+    padding: 0px 10px;
+    list-style-type: none;
+    position: relative;
+}
+
+header .navBar__ul-li::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: aqua;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    transition: 0s ease-out;
+}
+header .navBar__ul-li:hover::before{
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+header .navBar__ul-li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+.sidebarContainer{
+    height: 40px;
+    position: fixed;
+    bottom: 160px;
+    left: 20px;
+}
+
+.sidebarContainer .sidebarMenu__ul-li{
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+.sidebarContainer .sidebarMenu__ul-li a{
+    color: grey;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.sidebarContainer .sidebarMenu__ul-li a:hover{
+    color: aqua;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+}
+
+.sectionStyles{
+    max-width: 80%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+
+
+/*Presentacion*/
+
+#presentacion{
+    min-height: 100vh;
+}
+
+
+.banner{
+    height: 100%;
+    padding-top: 10rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+}
+
+.banner .misDatos{
+   
+}
+
+.banner .misDatos h1{
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 8.6rem;
+}
+
+.banner .misDatos .parrafoFront{
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.banner .misDatos .parrafoEstudios{
+    font-size: 1.5rem;
+    color: rgb(171, 170, 170);
+    font-weight: 600;
+    line-height: 2.7rem;
+}
+
+.banner .btnContacto{
+    margin-top: 4rem;
+}
+.banner .btnContacto a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border: 2px solid aqua;
+    border-radius: 4px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.banner .btnContacto a:hover{
+    background-color: rgba(0, 255, 242, 0.2);
+    transition: 0.4s;
+}
+
+#sobreMi{
+    width: 1000px;
+    margin: auto;
+}
+
+#sobreMi .sobreMiTitulo{
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 800;
+    border-bottom: 4px solid aqua;
+}
+
+
+.sobreMiContainer{
+    display: grid;
+    grid-template-areas: "sobreMiTexto sobreMiImg";
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.sobreMiTexto{
+    grid-area: sobreMiTexto;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.sobreMiTexto .listaHabilidades{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    flex-wrap: wrap;
+
+}
+
+.sobreMiImg{
+    grid-area: sobreMiImg;
+    height: 300px;
+    border: 2px solid aqua;
+}
+
+.sobreMiImg img{
+    width: 300px;
+    height: 300px;
+    position: abso;
+}
+
+
+#proyectos{
+    width: 1000px;
+    margin: auto;
+}
+.proyectosContainer{
+    text-align: center;
+}
+
+.proyectosContainer h2{
+
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 800;
+    border-bottom: 4px solid aqua;
+}
+
+.proyectosCardsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.proyectosCardsContainer .cardItemContainer{
+    width: 400px;
+    height: 100% ;
+    background: #112240;
+    box-shadow: rgba(2,12,27,0.7);
+    font-size: 1.7rem;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    transition: .4s;
+}
+
+.proyectosCardsContainer .cardItemContainer h3{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.proyectosCardsContainer .cardItemContainer .cardItemTexto{
+    color: #fff;
+}
+
+.proyectosCardsContainer .cardItemContainer ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    
+    
+}
+.proyectosCardsContainer .cardItemContainer .cardItemLenguajes ul li{
+    list-style-type: none;
+    padding-right: 20px;
+    color: grey;
+    font-size: 1.4rem;
+    
+}
+
+.proyectosCardsContainer .cardItemContainer:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    color: aqua;
+}
+
+#contacto{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactoContainer{
+    width: 50%;
+    padding-left: 4rem;
+    text-alixgn: center;
+    
+}
+
+.tituloContacto.estiloH2{
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(27, 119, 27);
+    text-shadow: 1px 1px rgb(59, 94, 59);
+}
+
+.contactoContainer p{
+    color: rgb(172, 172, 172);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+    margin-bottom: 30px;
+}
+
+
+.contactoContainer .btnContacto{
+    padding: 15px 20px;
+    border: 2px solid aqua;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.formulario{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.formulario div{
+    padding: 30px 0;
+}
+
+.singleInput{
+    position: relative;
+
+    
+}
+
+.singleInput input{
+    width: 50%;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding-bottom: 2px;
+    padding-top: 10px;
+    color: #fff;
+    outline: none;
+    transition: 1s;
+}
+
+.singleInput label{
+    cursor: text;
+    width: 100%;
+    font-size: 1.8rem;
+    color: grey;
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    transition: .5s;
+}
+
+
+.singleInput input:focus{
+    border-bottom: 2px solid #2ecece;
+}
+
+div.singleInput input:focus ~ label{
+    transform: translateY(-20px);
+    color: #2ecece;
+}
+.textAreaContainer{
+    width: 100%;
+    position: relative;
+}
+
+.textAreaContainer textarea{
+    width: 50%;
+    padding-left: .4rem;
+    font-size: 1.5rem;
+    background: none;
+    outline: none;
+    border: none;
+    border: 2px solid grey;
+    color: #fff;
+    transition: 1s;
+}
+
+.textAreaContainer textarea:hover{
+    bordcer: 2px solid #2ecece
+}
+
+
+.textAreaContainer textarea:focus{
+    transition: 1s;
+    border: 2px solid #2ecece;
+}
+
+.textAreaContainer label{
+    padding-left: .4rem;
+    cursor: text;
+    font-size: 1.5rem;
+    color: grey;
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+
+
+.btnContactoForm input{
+    border: 2px solid aqua;
+    background: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 25px;
+}
+/*FIN PRESENTACION*/
+
+#contactoPag h1{
+    text-align: center;
+    font-size: 4.5rem;
+    position: relative;
+}
+
+#contactoPag h1::before{
+    content: '';
+    width: 280px;
+    height: 4px;
+    background: aqua;
+    position: absolute;
+    bottom: 0;
+}
+
+#footer .footerContainer p{
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: rgb(185, 184, 184);
+}
+
+
+.contactoPagGrid{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "formularioGrid mapaUbicacion";
+    grid-template-columns: 1fr 2fr;
+    
+    gap: 50px;
+
+}
+
+.formularioGrid{
+    width: 100%;
+    grid-area: formularioGrid;
+}
+
+.mapaUbicacion{
+    grid-area: mapaUbicacion;
+}
+
+.pagContactoStyles input{
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(17, 17, 36) ;
+    padding-bottom: 0;
+    padding: 15px 10px;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+    
+}
+
+.pagContactoStyles input:focus{
+    transition: 0s;
+    border-bottom: 2px solid #2ecece;
+    transition: all 0.5s;
+}
+.pagContactoStyles label{
+    bottom: 44px;
+    margin-left: 10px;
+    transition: 0s;
+}
+
+.pagContactoStyles div.singleInput input:focus ~ label{
+    transition: 0s;
+    transform: translateY(0);
+    font-size: 0;
+}
+
+.pagContactoStyles .btnContactoForm input{
+    width: 25%;
+    border: 2px solid aqua;
+    background: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.pagContactoStyles textarea{
+    width: 100%;
+    background: rgb(17, 17, 36);
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+
+.pagContactoStyles .textAreaContainer textarea:focus{
+    border: none;
+    border-bottom: 2px solid #2ecece;
+}
+
+.pagContactoStyles .textAreaContainer label{
+    top: 40px;
+}
+
+.mapaUbicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

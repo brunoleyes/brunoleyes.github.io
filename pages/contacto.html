@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruno Leyes | Portfolio</title>
+  <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Lato:wght@100&family=Open+Sans:wght@300;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="./css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="#">
+      <img src="/images/css-logo.png" alt="vdvd" />
+    </a>
+    <nav class="navBar">
+      <ul class="navBar__ul">
+        <li class="navBar__ul-li"><a href="../index.html">Inicio</a></li>
+        <li class="navBar__ul-li"><a href="./pages/sobre-mi.html">Sobre Mi</a></li>
+        <li class="navBar__ul-li"><a href="./pages/cv.html">CV</a></li>
+        <li class="navBar__ul-li"><a href="./pages/proyectos.html">Proyectos</a></li>
+        <li class="navBar__ul-li"><a href="./pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="sidebarContainer">
+    <div class="sidebarMenu">
+      <ul class="sidebarMenu__ul">
+        <li class="sidebarMenu__ul-li"><a class="fa-brands fa-facebook fa-2x" href="#"></a></li>
+        <li class="sidebarMenu__ul-li"><a class="fa-brands fa-linkedin fa-2x" href="#"></a></li>
+        <li class="sidebarMenu__ul-li"><a class="fa-brands fa-instagram fa-2x" href="#"></a></li>
+        <li class="sidebarMenu__ul-li"><a class="fa-brands fa-twitter fa-2x" href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+  <main id="mainContacto">
+    <section id="contactoPag" class="sectionStyles">
+      <h1>Contactame</h1>
+      <div class="contactoPagGrid contactoContainer pagContactoStyles">
+        <form class="formulario formularioGrid" action="#">
+          <div class="singleInput">
+            <input type="text" id="nombre">
+            <label class="lblStyles" for="nombre">Nombre</label>
+          </div>
+          <div class="singleInput">
+            <input type="text" id="apellido">
+            <label class="lblStyles" for="apellido">Apellido</label>
+          </div>
+          <div class="singleInput">
+            <input type="email" id="email">
+            <label class="lblStyles" for="email">Email</label>
+          </div>
+          <div class="singleInput">
+            <input type="tel" id="celular">
+            <label class="lblStyles" for="celular">Celular</label>
+          </div>
+          <div class="textAreaContainer">
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <label for="mensaje">Mensaje</label>
+          </div>
+          <div class="btnContactoForm">
+            <input type="submit" value="Enviar">
+          </div>
+        </form>
+        <div class="mapaUbicacion">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26227.778555264267!2d-58.22845655!3d-34.743693099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f1e403c8c59%3A0xd372706a56e7f53d!2sEzpeleta%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1677590403590!5m2!1ses-419!2sar"
+            width="700" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
