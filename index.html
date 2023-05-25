@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Leyes - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="circulo-item1"></div>
+    <div class="circulo-item2"></div>
+    <header id="header">
+        <div class="header-container">
+            <a class="logo" href="#"><img src="./imdg/logo.png" alt=""></a>
+            <nav class="nav-menu">
+                <ul class="nav__ul">
+                    <li class="nav__ul-li"><a href="#presentacion">Inicio</a></li>
+                    <li class="nav__ul-li"><a href="#skills">Skills</a></li>
+                    <li class="nav__ul-li"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav__ul-li"><a href="#contacto">Contacto</a></li>
+                </ul>
+        </div>
+        <button class="abrir-menu"><i class="fas fa-bars"></i></button> 
+    </header>
+    <section id="presentacion">
+        <div class="presentacion-container">
+            <div class="presentacion-container-left">
+                <div class="card-img-presentacion">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="presentacion-container-right">
+                <div class="card-blur-container">
+                    <p class="presentacion-texto">Hola, mi nombre es</p>
+                    <h1>Bruno L</h1>
+                    <p class="presentacion-desc">Front-End Developer / Estudiando analista en sistemas.</p>
+                </div>
+                <div class="lenguajes-container">
+                    <h3 class="lenguajes-titulo">Lenguajes:</h3>
+                    <div class="lenguajes-items-container">
+                        <img class="lenguaje-item" src="./img/logo-html.svg" alt="Logo HTML">
+                        <img class="lenguaje-item" src="./img/logo-css.svg" alt="Logo CSS">
+                        <img class="lenguaje-item" src="./img/logo-javascript.svg" alt="Logo JavaScript">
+                    </div>
+                </div>
+                <div class="proyectos-recientes-container">
+                    <h3 class="proyectos-recientes-titulo">Proyectos Recientes:</h3>
+                    <div class="proyectos-cards-container">
+                        <div class="proyecto-item-card"></div>
+                        <div class="proyecto-item-card"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-container">
+            <h2 class="skills-titulo">Skills</h2>
+            <div class="skills-items-container">
+                <div class="skills-item-left">
+                    <div class="skill-item">
+                        <p class="skill-item-titulo">Manejo de VS Code</p>
+                        <div class="barra-skill-item vscode"></div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="skill-item-titulo">HTML</p>
+                        <div class="barra-skill-item html"></div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="skill-item-titulo">CSS</p>
+                        <div class="barra-skill-item css"></div>
+                    </div>
+                </div>
+                <div class="skills-item-right">
+                    <div class="skill-item">
+                        <p class="skill-item-titulo">JavaScript</p>
+                        <div class="barra-skill-item javascript"></div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="skill-item-titulo">Ingles</p>
+                        <div class="barra-skill-item ingles"></div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="skill-item-titulo">Desarrollo Back End</p>
+                        <div class="barra-skill-item backend"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="descargar-cv">Descargar CV</button>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="portfolio-container">
+            <h2 class="portfolio-titulo">Portfolio</h2>
+            <div class="proyectos-2022-container">
+                <h3>Proyectos 2022</h3>
+                <div class="items-proyectos-container">
+                    <div class="item-proyecto-card-section"></div>
+                    <div class="item-proyecto-card-section"></div>
+                    <div class="item-proyecto-card-section"></div>
+                    <div class="item-proyecto-card-section"></div>
+                </div>
+            </div>
+            <div class="proyectos-2018-2021-container">
+                <h3>Proyectos 2018-2021</h3>
+                <div class="items-proyectos-container">
+                    <div class="item-proyecto-card-section"></div>
+                    <div class="item-proyecto-card-section"></div>
+                    <div class="item-proyecto-card-section"></div>
+                    <div class="item-proyecto-card-section"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <div class="contacto-container">
+            <h2 class="contacto-titulo">Contacto</h2>
+            <div class="grid-padre-contacto">
+                <form id="formulario-contacto">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required class="input-contacto-item">
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required class="input-contacto-item">
+                    <input type="email" id="email" name="email" placeholder="Email" required class="input-contacto-item">
+                    <input type="telefono" id="telefono" name="telefono" placeholder="WhatsApp" required class="input-contacto-item">
+                </form>
+                <textarea name="" id="" cols="30" rows="10" form="formulario-contacto" placeholder="Escribe tu mensaje" class="textarea-contacto-item"></textarea>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26227.778555264267!2d-58.22845655!3d-34.743693099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f1e403c8c59%3A0xd372706a56e7f53d!2sEzpeleta%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1682732948484!5m2!1ses-419!2sar" width="700" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <input type="submit" value="Enviar" form="formulario-contacto" class="input-contacto-item">
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>Desarrollado por Bruno - Todos los derechos reservados © 2022.</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
